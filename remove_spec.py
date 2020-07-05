@@ -10,8 +10,8 @@ def remove_model(img):
     Make = buf.spec().get_string_attribute("Make")
     Model = buf.spec().get_string_attribute("Model")
     print(f"Removing Make: {Make}, Model: {Model}")
-    buf.spec().attribute("Make", "")
-    buf.spec().attribute("Model", "")
+    buf.spec().attribute("Make", "there_is_no")
+    buf.spec().attribute("Model", "such_model")
     buf.write(img)
 
 
