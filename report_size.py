@@ -21,6 +21,6 @@ if __name__ == "__main__":
         print(f"sys.argv[0] img_file")
         exit(1)
 
-    filename = int(sys.argv[1])
+    filename = sys.argv[1]
     size = report_size(filename)
     print(size)
